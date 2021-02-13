@@ -1,0 +1,50 @@
+body {
+    background: rgba(255, 255, 255, 0.3) url('../imgs/branch-01.svg') top right/250px no-repeat;
+}
+/* fonts */
+* {
+    font-family: 'Roboto', sans-serif !important;
+    border: 1px solid rgb(138, 138, 138);
+}
+h1, h2, h3, h4, .hero-cover .summary, .read-more {
+    font-family: 'Fraunces', serif !important;
+}
+.light-brown-font {color:#B89C91}
+.medium-brown-font {color:#886E63}
+.dark-brown-font {color:#5A4339}
+.light-red-font {color:#DF5E56}
+.dark-red-font {color:#A82B2E}
+
+/* Eyebrow nav */
+.topnav a {
+    font-size: .8rem;
+    color:#A82B2E;
+}
+.topnav a:hover {
+    color:#541617;
+}
+
+/* Main nav */
+.navbar-nav {
+    border-bottom: 1px solid #B89C91;
+}
+.navbar-nav li .active {
+    border-bottom: 6px solid #B89C91;
+}
+
+/* blog hero section */
+.hero-cover {  
+    background: url('../imgs/news/blog-hero-img.jpg') center/cover no-repeat #F8CFD2;
+}
+.hero-info {
+    padding:4rem;
+}
+.date {
+    letter-spacing: 2px;
+    font-size: .8rem !important;
+}
+
+
+
+
+
