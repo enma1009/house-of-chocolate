@@ -55,7 +55,7 @@ h1, h2, h3, h4, .hero-cover .summary, .read-more, .trending-link, .subscribe-btn
     background-color: #B89C91;
     color:#fff;
 }
-.trending-btn:focus, .active {
+.trending-btn:focus, .active-itm {
     border: none !important;
     background-color: #F8CFD2 !important;
     border:1px solid #F8CFD2 !important;

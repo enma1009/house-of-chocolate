@@ -1,30 +1,30 @@
 $(document).ready(function(){
     let content = setContent("topViews");
     $("#trending-items").html(content);
-    $("#topViews").addClass("active");
+    $("#topViews").addClass("active-itm");
     initializeSlick();
 
       // Data for the carousel
       $("#topViews").on("click", function() {
         $('#trending-items').slick('unslick');
-        $("#topViews").addClass("active");
-        $("#topComments, #topShares").removeClass("active");
+        $("#topViews").addClass("active-itm");
+        $("#topComments, #topShares").removeClass("active-itm");
         content = setContent(this.id);
         $("#trending-items").html(content);
         initializeSlick();
       });
       $("#topComments").on("click", function() {
         $('#trending-items').slick('unslick');
-        $("#topComments").addClass("active");
-        $("#topViews, #topShares").removeClass("active");
+        $("#topComments").addClass("active-itm");
+        $("#topViews, #topShares").removeClass("active-itm");
         content = setContent(this.id);
         $("#trending-items").html(content);
         initializeSlick();
       });
       $("#topShares").on("click", function() {
         $('#trending-items').slick('unslick');
-        $("#topShares").addClass("active");
-        $("#topViews, #topComments").removeClass("active");
+        $("#topShares").addClass("active-itm");
+        $("#topViews, #topComments").removeClass("active-itm");
         content = setContent(this.id);
         $("#trending-items").html(content);
         initializeSlick();
