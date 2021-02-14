@@ -2,11 +2,11 @@ body {
     background: rgba(255, 255, 255, 0.3) url('../imgs/branch-01.svg') top right/250px no-repeat;
 }
 /* fonts */
-*, .trending-title {
+*, .trending-title, .archives {
     font-family: 'Roboto', sans-serif !important;
     /* border: 1px solid rgb(138, 138, 138); */
 }
-h1, h2, h3, h4, .hero-cover .summary, .read-more, .trending-link {
+h1, h2, h3, h4, .hero-cover .summary, .read-more, .trending-link, .subscribe-btn {
     font-family: 'Fraunces', serif !important;
 }
 .light-brown-font {color:#B89C91}
@@ -45,7 +45,35 @@ h1, h2, h3, h4, .hero-cover .summary, .read-more, .trending-link {
 }
 
 /* trending section */
-
+.trending-btn {
+    border: 1px solid #B89C91;
+    background-color: #fff;
+    color:#5A4339;
+}
+.trending-btn:hover {
+    border: 1px solid #5A4339;
+    background-color: #B89C91;
+    color:#fff;
+}
+.trending-btn:focus {
+    border: none !important;
+    background-color: #F8CFD2 !important;
+    color:#A82B2E !important;
+    font-weight: bold !important;
+}
+/* archives */
+.btn-secondary {
+    background-color:#EAEAEA !important;
+    color: #000 !important;
+    border: none;
+}
+/* newsletter */
+.newsletter {
+    background: url('../imgs/newsletter-bg.svg') top right/cover no-repeat #5A4339;
+}
+.subscribe-btn {
+    background-color: #A82B2E;
+}
 
 
 

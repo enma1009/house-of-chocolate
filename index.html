@@ -20,7 +20,7 @@
     <title>House of cacao</title>
   </head>
   <body>
-    <div class="container">
+    <header class="container">
 
         <!-- eyebrow nav -->
         <ul class="nav topnav justify-content-center p-2">
@@ -68,9 +68,9 @@
                 </ul>
             </div>
         </nav>
-    </div>
+    </header>
 
-    <main class="container">
+    <main class="container pb-4">
 
         <!-- hero blog post -->
         <section class="hero-cover mb-4">
@@ -123,25 +123,46 @@
             <img src="imgs/treding-stories-img.svg" width="300px" alt="" class="d-block mx-auto">
             <h2 class="fst-italic medium-brown-font text-center fw-light py-4">Trending Stories</h2>
             <div class="text-center m-4">
-                <button id="topViews" type="button" class="trending-btn btn btn-primary active">Most Viewed</button>
-                <button id="topComments" type="button" class="trending-btn btn btn-primary">Most Commented</button>
-                <button id="topShares" type="button" class="trending-btn btn btn-primary">Most Shared</button>
+                <button id="topViews" type="button" class="trending-btn btn">Most Viewed</button>
+                <button id="topComments" type="button" class="trending-btn btn">Most Commented</button>
+                <button id="topShares" type="button" class="trending-btn btn">Most Shared</button>
             </div>
             <div id="trending-items">
-                <div class="p-2"><img src="imgs/news/most-viewed/img-01.jpg" width="100%" alt=""></div>
-                <div class="p-2"><img src="imgs/news/most-viewed/img-02.jpg" width="100%" alt=""></div>
-                <div class="p-2"><img src="imgs/news/most-viewed/img-03.jpg" width="100%" alt=""></div>
-                <div class="p-2"><img src="imgs/news/most-viewed/img-04.jpg" width="100%" alt=""></div>
-                <div class="p-2"><img src="imgs/news/most-viewed/img-05.jpg" width="100%" alt=""></div>
-                <div class="p-2"><img src="imgs/news/most-viewed/img-06.jpg" width="100%" alt=""></div>
-                <div class="p-2"><img src="imgs/news/most-viewed/img-07.jpg" width="100%" alt=""></div>
-                <div class="p-2"><img src="imgs/news/most-viewed/img-08.jpg" width="100%" alt=""></div>
-                <div class="p-2"><img src="imgs/news/most-viewed/img-09.jpg" width="100%" alt=""></div>
-                <div class="p-2"><img src="imgs/news/most-viewed/img-10.jpg" width="100%" alt=""></div>
+                <!-- data will load here -->
             </div>
         </section>
     
     </main>
+
+    <section class="text-center align-items-center py-4">
+        <h5 class="d-md-inline m-0 text-uppercase archives dark-red-font m-0 py-2 align-middle">Blog Archives</h5>
+        <button type="button" class="btn btn-secondary btn-sm m-0 mx-2">2021</button>
+        <button type="button" class="btn btn-secondary btn-sm m-0 mx-2">2020</button>
+        <button type="button" class="btn btn-secondary btn-sm m-0 mx-2">2019</button>
+        <button type="button" class="btn btn-secondary btn-sm m-0 mx-2">2018</button>
+        <button type="button" class="btn btn-secondary btn-sm m-0 mx-2">2017</button>
+        <a href="#" class="d-block d-md-inline py-2 text-secondary">View all &#62;</a>
+    </section>
+
+    <footer class="mt-5">
+        <section class="newsletter">
+            <div class="container p-5">
+                <form class="row g-3 justify-content-center align-items-center">
+                    <div class="col-auto">
+                        <h3 class="m-0 p-0 light-brown-font fw-bold">Let's keep in touch!</h3>
+                    </div>
+                    <div class="col-auto">
+                        <label for="email" class="visually-hidden">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="your-email@site.com">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn subscribe-btn text-uppercase text-white fw-bold">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </footer>
+
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick/slick.min.js"></script>
