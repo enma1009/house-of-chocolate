@@ -1,24 +1,30 @@
 $(document).ready(function(){
     let content = setContent("topViews");
     $("#trending-items").html(content);
-    $("#topViews").focus();
+    $("#topViews").addClass("active");
     initializeSlick();
 
       // Data for the carousel
       $("#topViews").on("click", function() {
         $('#trending-items').slick('unslick');
+        $("#topViews").addClass("active");
+        $("#topComments, #topShares").removeClass("active");
         content = setContent(this.id);
         $("#trending-items").html(content);
         initializeSlick();
       });
       $("#topComments").on("click", function() {
         $('#trending-items').slick('unslick');
+        $("#topComments").addClass("active");
+        $("#topViews, #topShares").removeClass("active");
         content = setContent(this.id);
         $("#trending-items").html(content);
         initializeSlick();
       });
       $("#topShares").on("click", function() {
         $('#trending-items').slick('unslick');
+        $("#topShares").addClass("active");
+        $("#topViews, #topComments").removeClass("active");
         content = setContent(this.id);
         $("#trending-items").html(content);
         initializeSlick();
