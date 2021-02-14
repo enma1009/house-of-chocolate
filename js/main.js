@@ -1,8 +1,60 @@
 $(document).ready(function(){
-    // Image carousel
+    let content = setContent("topViews");
+    $("#trending-items").html(content);
+    initializeSlick();
+
+      // Data for the carousel
+      $("#topViews").on("click", function() {
+        $('#trending-items').slick('unslick');
+        content = setContent(this.id);
+        $("#trending-items").html(content);
+        initializeSlick();
+      });
+      $("#topComments").on("click", function() {
+        $('#trending-items').slick('unslick');
+        content = setContent(this.id);
+        $("#trending-items").html(content);
+        initializeSlick();
+      });
+      $("#topShares").on("click", function() {
+        $('#trending-items').slick('unslick');
+        content = setContent(this.id);
+        $("#trending-items").html(content);
+        initializeSlick();
+      });
+  });
+
+  function setContent(id) {
+    //console.log(id);
+    let result = "";
+    switch(id) {
+        case "topViews":
+            for(let x of mostViewed) {
+                result += `<div class="p-2 text-center"><img src="imgs/news/most-viewed/${x.img}" width="100%" alt="" class="pb-2">
+                <h4 class="trending-title fs-5 fw-bold light-red-font">${x.title}</h4><img src="imgs/views-icon.svg" alt="" width="25px" class="d-inline-block align-middle"> <a href="#" class="trending-link fst-italic dark-red-font mb-5">${x.viewNumber} views / Read More ></a></div>`;
+            }
+        break;
+        case "topComments":
+            for(let x of mostCommented) {
+                result += `<div class="p-2 text-center"><img src="imgs/news/most-commented/${x.img}" width="100%" alt="" class="pb-2">
+                <h4 class="trending-title fs-5 fw-bold light-red-font">${x.title}</h4><img src="imgs/comments-icon.svg" alt="" width="20px" class="d-inline-block align-middle"> <a href="#" class="trending-link fst-italic dark-red-font mb-5">${x.commentNumber} comments / Read More ></a></div>`;
+            }
+        break;
+        case "topShares":
+            for(let x of mostShared) {
+                result += `<div class="p-2 text-center"><img src="imgs/news/most-shared/${x.img}" width="100%" alt="" class="pb-2">
+                <h4 class="trending-title fs-5 fw-bold light-red-font">${x.title}</h4><img src="imgs/shares-icon.svg" alt="" width="20px" class="d-inline-block align-middle"> <a href="#" class="trending-link fst-italic dark-red-font mb-5">${x.sharesNumber} shares / Read More ></a></div>`;
+            }
+        break;
+    }
+    //console.log(result);
+    return result;
+  }
+
+  function initializeSlick() {
     $('#trending-items').slick({
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 300,
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -35,14 +87,4 @@ $(document).ready(function(){
           }
         ]
       });
-      // Data for the carousel
-      $("#topViews").on("click", function() {
-        let content = setContent(this.id);
-        $("#trending-items").html(content);
-      })
-  });
-
-  function setContent(id) {
-    console.log(id);
-    return "<p>hello from function</p>";
   }

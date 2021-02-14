@@ -2,11 +2,11 @@ body {
     background: rgba(255, 255, 255, 0.3) url('../imgs/branch-01.svg') top right/250px no-repeat;
 }
 /* fonts */
-* {
+*, .trending-title {
     font-family: 'Roboto', sans-serif !important;
-    border: 1px solid rgb(138, 138, 138);
+    /* border: 1px solid rgb(138, 138, 138); */
 }
-h1, h2, h3, h4, .hero-cover .summary, .read-more {
+h1, h2, h3, h4, .hero-cover .summary, .read-more, .trending-link {
     font-family: 'Fraunces', serif !important;
 }
 .light-brown-font {color:#B89C91}
@@ -43,6 +43,9 @@ h1, h2, h3, h4, .hero-cover .summary, .read-more {
     letter-spacing: 2px;
     font-size: .8rem !important;
 }
+
+/* trending section */
+
 
 
 
