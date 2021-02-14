@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('.trending-items').slick({
+    // Image carousel
+    $('#trending-items').slick({
         dots: true,
         infinite: false,
         speed: 300,
@@ -34,4 +35,14 @@ $(document).ready(function(){
           }
         ]
       });
+      // Data for the carousel
+      $("#topViews").on("click", function() {
+        let content = setContent(this.id);
+        $("#trending-items").html(content);
+      })
   });
+
+  function setContent(id) {
+    console.log(id);
+    return "<p>hello from function</p>";
+  }
