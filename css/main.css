@@ -6,7 +6,7 @@ body {
     font-family: 'Roboto', sans-serif !important;
     /* border: 1px solid rgb(138, 138, 138); */
 }
-h1, h2, h3, h4, .hero-cover .summary, .read-more, .trending-link, .subscribe-btn {
+h1, h2, h3, h4, .hero-cover .summary, .read-more, .trending-link, .subscribe-btn, .copyright-info p {
     font-family: 'Fraunces', serif !important;
 }
 .light-brown-font {color:#B89C91}
@@ -67,12 +67,15 @@ h1, h2, h3, h4, .hero-cover .summary, .read-more, .trending-link, .subscribe-btn
     color: #000 !important;
     border: none;
 }
-/* newsletter */
+/* footer */
 .newsletter {
     background: url('../imgs/newsletter-bg.svg') top right/cover no-repeat #5A4339;
 }
 .subscribe-btn {
     background-color: #A82B2E;
+}
+.copyright-info {
+    background-color: #C9B1AC;
 }
 
 
